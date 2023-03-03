@@ -1,34 +1,8 @@
 const menu = {
-  _courses: {
+  courses: {
     appetizers: [],
     mains: [],
     desserts: []
-  },
-
-  get appetizers() {
-    return this._courses.appetizers
-  },
-  set appetizers(appetizer) {
-    this._courses.appetizers = appetizer
-  },
-  get mains() {
-    return this._courses.mains
-  },
-  set mains(main) {
-    this._courses.mains = main
-  },
-  get desserts() {
-    return this._courses.desserts
-  },
-  set desserts(dessert) {
-    this._courses.desserts = dessert
-  },
-  get courses() {
-    return {
-      appetizers: this.appetizers,
-      mains: this.mains,
-      desserts: this.desserts
-    }
   },
 
   addDishToCourse (courseName, dishName, dishPrice) {
@@ -65,7 +39,7 @@ menu.addDishToCourse('appetizers','Wonton Soup', 6.00);
 menu.addDishToCourse('mains','Pad Thai', 15.00);
 menu.addDishToCourse('mains','Pad See Ew', 15.00);
 menu.addDishToCourse('mains','Teriyaki Bento', 16.00);
-menu.addDishToCourse('mains','Asian Mac and Cheese', 15.00);
+menu.addDishToCourse('mains','Massaman Curry', 15.00);
 menu.addDishToCourse('mains','Pineapple Fried Rice', 20.00);
 
 menu.addDishToCourse('desserts','Coffee', 3.00);
